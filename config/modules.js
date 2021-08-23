@@ -67,7 +67,7 @@ function getWebpackAliases(options = {}) {
     return {
       src: paths.appSrc,
     };
-  }else {
+  } else {
     return {
       '@': paths.appSrc,
       Assets: paths.assets,

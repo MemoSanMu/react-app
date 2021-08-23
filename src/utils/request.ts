@@ -44,9 +44,7 @@ service.interceptors.response.use(
     }
     if (!success) {
       if (!permissionDenied) {
-        Toast.fail(
-          response.data?.msg || response.data?.message || '未知错误'
-        );
+        Toast.fail(response.data?.msg || response.data?.message || '未知错误');
       }
       console.error(response);
       throw new Error(response.data.status);

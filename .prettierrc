@@ -1,5 +1,20 @@
 {
   "singleQuote": true,
   "trailingComma": "es5",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "semi": true,
+  "tabWidth": 2,
+  "[javasctipt]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "bracketSpacing": true
 }
