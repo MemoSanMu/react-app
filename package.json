@@ -80,6 +80,7 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
+    "analyze": "node scripts/build.js --analyze",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
@@ -180,6 +181,7 @@
     "husky": "^7.0.2",
     "less": "4.1.1",
     "less-loader": "5.0.0",
-    "standard-version": "^9.3.1"
+    "standard-version": "^9.3.1",
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }
