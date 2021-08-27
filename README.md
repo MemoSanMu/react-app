@@ -1,48 +1,29 @@
-# Getting Started with Create React App
+## commit message
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 主要 type
 
-## Available Scripts
+feat: 增加新功能
 
-In the project directory, you can run:
+fix: 修复 bug
 
-### `yarn start`
+### 特殊 type
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+docs: 只改动了文档相关的内容
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+style: 不影响代码含义的改动，例如去掉空格、改变缩进、增删分号
 
-### `yarn test`
+build: 构造工具的或者外部依赖的改动，例如 webpack，npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+refactor: 代码重构时使用
 
-### `yarn build`
+revert: 执行 git revert 打印的 message
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 暂不使用 type
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+test: 添加测试或者修改现有测试
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+perf: 提高性能的改动
 
-### `yarn eject`
+ci: 与 CI（持续集成服务）有关的改动
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## git commit message
+chore: 不修改 src 或者 test 的其余修改，例如构建过程或辅助工具的变动
