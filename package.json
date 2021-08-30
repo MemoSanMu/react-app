@@ -2,8 +2,10 @@
   "name": "react-app",
   "version": "0.1.1",
   "private": true,
+  "homepage": "/",
   "dependencies": {
     "@babel/core": "7.12.3",
+    "@emotion/babel-plugin": "^11.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
     "@types/react": "^17.0.19",
@@ -64,6 +66,9 @@
     "react-dev-utils": "^11.0.3",
     "react-dom": "^17.0.2",
     "react-refresh": "^0.8.3",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-spinners": "^0.11.0",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
     "sass-loader": "10.0.5",
@@ -176,6 +181,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@types/react-router-dom": "^5.1.8",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.2",

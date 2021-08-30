@@ -1,14 +1,12 @@
-import React from 'react';
-import classnames from 'classnames/bind';
-import styles from '@/style/index.module.less';
-const cx = classnames.bind(styles);
+import React, { FC } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { basename } from '@/utils/config';
+import RootRouter from '@/pages';
 
-function App() {
-  return (
-    <div className={cx('app-container')}>
-      <div>this is react app</div>
-    </div>
-  );
-}
+const App: FC = () => (
+  <BrowserRouter basename={basename}>
+    <RootRouter />
+  </BrowserRouter>
+);
 
 export default App;
