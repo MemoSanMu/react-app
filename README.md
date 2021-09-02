@@ -1,4 +1,52 @@
-### commit message
+# react-app
+
+## 代码规范：
+
+### 1.ts+eslint+pritter
+
+### 2.引入模块按需引入(给 tree-shaking 准备)
+
+#### 案例：
+
+    import { isEmpty } from 'lodash-es';
+
+## 快速开始
+
+1. 安装依赖：`yarn install`
+2. 启动服务：`yarn start`
+3. 生产打包：`yarn build`
+4. 分析打包：`yarn analyze`
+5. 提交记录：`yarn commit`
+
+> 这里使用的是 yarn，但也可以替换为 npm。
+
+## 项目结构
+
+```
+├── build                产物
+├── config               webpack 配
+├── public               模版
+├── scripts              执行脚本
+├── src
+│   ├── assets           静态资源
+│   ├── containers       模块容器
+│   ├── index.tsx        入口文件
+│   ├── layouts          布局
+│   ├── pages            页面
+│   ├── publicComponents 组件
+│   │   ├── base         基础组件
+│   │   └── basic        业务组件
+│   ├── routers          路由
+│   ├── services         接口服务
+│   ├── store            状态
+│   ├── style            样式
+│   ├── typings          通用 ts 规范
+│   └── utils            工具集
+```
+
+> ⚠ 确保 `src/utils` 内的文件（函数）下没有副作用。
+
+## commit message
 
 > commitizen 此包也可不全局安装，项目内已经安装完毕
 
