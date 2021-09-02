@@ -77,3 +77,4 @@ declare module '*.module.sass' {
 }
 
 declare module 'lodash-es';
+declare module 'fastclick';

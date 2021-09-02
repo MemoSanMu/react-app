@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'lib-flexible';
+import FastClick from 'fastclick';
 import '@/style/normalize.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+FastClick.attach(document.body);
 
 ReactDOM.render(
   <React.StrictMode>
