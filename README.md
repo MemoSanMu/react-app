@@ -101,3 +101,56 @@ ci: 与 CI（持续集成服务）有关的改动
 
 chore: 不修改 src 或者 test 的其余修改，例如构建过程或辅助工具的变动
 ```
+
+## standard-version
+
+> standard-version 是一款遵循语义化版本（ semver）和 commit message 标准规范 的版本和 changlog 自动化工具。
+
+#### 安装 & 使用
+
+```
+在这里我仍然推荐的全局安装：
+
+$ npm install -g standard-version
+# 或者
+$ npm install --save-dev standard-version
+执行：
+
+# Help standard-version --help
+$ standard-version
+```
+
+##### 执行 standard-version 命令，我们会在控制台看到整个执行流程的 log 信息，在这里几个常用的参数需要注意下:
+
+##### --release-as, -r 指定版本号
+
+> 默认情况下，工具会自动根据 主版本（major）,次版本（ minor） or 修订版（patch） 规则生成版本号，例如如果你 package.json 中的 version 为 1.0.0, 那么执行后版本号则是：1.0.1。自定义可以通过：
+
+```
+$ standard-version -r minor
+# output 1.1.0
+$ standard-version -r 2.0.0
+# output 2.0.0
+$ standard-version -r 2.0.0-test
+# output 2.0.0-test
+```
+
+##### 需要注意的是，这里的版本名称不是随便的字符，而是需要遵循语义化版本（ semver） 规范的
+
+```
+--prerelease, -p 预发版本命名
+用来生成预发版本, 如果当期的版本号是 2.0.0，例如
+
+$ standard-version --prerelease alpha
+
+# output 2.0.0-alpha.0
+
+--tag-prefix, -t 版本 tag 前缀
+用来给生成 tag 标签添加前缀，例如如果前版本号为 2.0.0，则：
+
+$ standard-version --tag-prefix "stable-"
+
+# output tag: stable-v2.0.0
+```
+
+> 以上这几个参数可能我们用的比较多，还有其他选项可以通过 standard-version --help 查看。

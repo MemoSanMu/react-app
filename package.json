@@ -91,7 +91,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version && git push --follow-tags"
   },
   "eslintConfig": {
     "extends": [
