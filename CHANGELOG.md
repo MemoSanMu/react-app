@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/MemoSanMu/react-app/compare/v0.1.2...v0.1.3) (2021-09-08)
+
+
+### Features
+
+* [ws][2021-09-04][add d.ts module react-spinners] ([c2eb506](https://github.com/MemoSanMu/react-app/commit/c2eb506f25582604d986bae0cde32d9448a35db5))
+
+
+### Docs
+
+* [ws][2021-09-08][add standard-version] ([6efa8cc](https://github.com/MemoSanMu/react-app/commit/6efa8cc757ce9bdc149162a63b12d9e32c9b8919))
+
 ### [0.1.2](https://github.com/MemoSanMu/react-app/compare/v0.1.1...v0.1.2) (2021-09-08)
 
 
