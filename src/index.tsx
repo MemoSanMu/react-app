@@ -6,6 +6,7 @@ import '@/style/normalize.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// fastclick
 FastClick.attach(document.body);
 
 ReactDOM.render(
