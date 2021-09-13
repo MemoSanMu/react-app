@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/MemoSanMu/react-app/compare/v0.1.4...v0.1.5) (2021-09-13)
+
+
+### ✏️ Documentation | 文档
+
+* **.versionrc.js:** [ws][2021-09-13][更改versionrc changelog中文注释] ([84d7de2](https://github.com/MemoSanMu/react-app/commit/84d7de29c7ecc7ea1bf766d152133a5025c88569))
+
 ### [0.1.4](https://github.com/MemoSanMu/react-app/compare/v0.1.3...v0.1.4) (2021-09-13)
 
 
