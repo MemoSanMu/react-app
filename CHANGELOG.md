@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/MemoSanMu/react-app/compare/v0.1.3...v0.1.4) (2021-09-13)
+
+
+### Features
+
+* [ws][2021-09-13][增加lint-staged] ([08dfd6e](https://github.com/MemoSanMu/react-app/commit/08dfd6e745dd2fb272bd23ce0ebf1f7f2c2dd245))
+* 测试 ([1b60fb2](https://github.com/MemoSanMu/react-app/commit/1b60fb2daa4663a6c6e629edd0a636390408c7e8))
+* o ([16c0d76](https://github.com/MemoSanMu/react-app/commit/16c0d76226842576f6ea4632ab581b2c3e1c9cd5))
+
+
+### Bug Fixes
+
+* [ws][2021-09-13][解决husky高版本无效问题] ([b90aa34](https://github.com/MemoSanMu/react-app/commit/b90aa34ac9b0c7b7575a5b1bf8019b12f2c0349e))
+
+
+### Docs
+
+* [ws][2021-09-13][更新 "husky": "4.3.8",] ([68ab840](https://github.com/MemoSanMu/react-app/commit/68ab840c55887140804a77b4056f5ef7f79d4871))
+
 ### [0.1.3](https://github.com/MemoSanMu/react-app/compare/v0.1.2...v0.1.3) (2021-09-08)
 
 
