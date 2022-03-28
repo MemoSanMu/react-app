@@ -154,3 +154,17 @@ $ standard-version --tag-prefix "stable-"
 ```
 
 > 以上这几个参数可能我们用的比较多，还有其他选项可以通过 standard-version --help 查看。
+
+##### postcss-px-to-viewport 行内样式兼容
+
+> 行内样式的转换与这个插件无关，你可以用公式进行转换
+> const getVwUnit = (num: number): number => num / window.screen.width \* 100，num 是 px 单位
+
+```tsx
+import { getVwUnit } from '@/utils/common';
+style={
+  {
+    fontSize: getVwUnit(16),
+  }
+}
+```

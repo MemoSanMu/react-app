@@ -82,3 +82,12 @@ export const variableTypeDetection = {
   isObject: isType('Object'),
   isArray: isType('Array'),
 };
+
+/**
+ * @description: postcss-px-to-viewport/issues 行内样式 公式进行转换
+ * issue https://github.com/evrone/postcss-px-to-viewport/issues/4
+ * @param {number} num 是px单位
+ * @return {*}
+ */
+export const getVwUnit = (num: number): number =>
+  (num / window.screen.width) * 100;
