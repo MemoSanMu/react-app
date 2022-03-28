@@ -1,0 +1,15 @@
+// 单行文本省略
+.ellipsis() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// 多行文本省略
+.multilineTextEllipsis(@line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

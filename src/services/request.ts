@@ -44,7 +44,10 @@ service.interceptors.response.use(
     }
     if (!success) {
       if (!permissionDenied) {
-        Toast.fail(response.data?.msg || response.data?.message || '未知错误');
+        Toast.show({
+          icon: 'fail',
+          content: response.data?.msg || response.data?.message || '未知错误',
+        });
       }
       console.error(response);
       throw new Error(response.data.status);
@@ -67,11 +70,20 @@ service.interceptors.response.use(
 
     if (error?.response) {
       const message = errorHttpCodeMap[error.response.status] || '未知错误';
-      Toast.fail(message);
+      Toast.show({
+        icon: 'fail',
+        content: message,
+      });
     } else if (isTimeout(error?.message)) {
-      Toast.fail('请求超时');
+      Toast.show({
+        icon: 'fail',
+        content: '请求超时',
+      });
     } else if (error?.message) {
-      Toast.fail(error.message);
+      Toast.show({
+        icon: 'fail',
+        content: error.message,
+      });
     }
     throw new Error(error);
   }

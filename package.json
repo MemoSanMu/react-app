@@ -5,6 +5,7 @@
   "homepage": "/",
   "dependencies": {
     "@babel/core": "7.12.3",
+    "@egjs/react-infinitegrid": "^4.2.0",
     "@emotion/babel-plugin": "^11.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
@@ -12,7 +13,7 @@
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
-    "antd-mobile": "^2.3.4",
+    "antd-mobile": "^5.8.2",
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.0",
@@ -190,6 +191,7 @@
     "less": "4.1.1",
     "less-loader": "5.0.0",
     "lint-staged": "^11.1.2",
+    "postcss-px-to-viewport": "^1.1.1",
     "standard-version": "^9.3.1",
     "webpack-bundle-analyzer": "^4.4.2"
   }

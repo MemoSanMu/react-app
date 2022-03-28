@@ -1,0 +1,63 @@
+@import url('../../../style/common.less');
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 30px);
+  overflow: hidden auto;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.title {
+  .multilineTextEllipsis(2);
+  color: rgba(51, 51, 51, 100);
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  margin-top: 4px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.item {
+  display: inline-block;
+  width: calc((100vw - 30px) / 2);
+  opacity: 1;
+}
+
+.item .item-content {
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 11px 9px;
+  box-sizing: border-box;
+}
+
+.item .thumbnail {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.item .thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item .info {
+  color: rgba(153, 153, 153, 100);
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  .ellipsis();
+}
+
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}

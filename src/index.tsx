@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'lib-flexible';
+// import 'lib-flexible';
 import FastClick from 'fastclick';
 import '@/style/normalize.css';
+import '@/style/reset.css';
+import 'antd-mobile/es/global';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
