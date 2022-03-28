@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/MemoSanMu/react-app/compare/v0.1.5...v0.1.6) (2022-03-28)
+
+
+### 📝 Documentation | 文档
+
+* [ws][2021-09-13][versionrc 文档更新] ([afef74d](https://github.com/MemoSanMu/react-app/commit/afef74d19c9c7f2a3c2c2d74c284b8f513048124))
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* **add postcss-px-to-viewport、update antd-mobile、add @egjs/react-infinitegrid 瀑布流虚拟列表:** update ([dfce428](https://github.com/MemoSanMu/react-app/commit/dfce42882965bb3126f97ed2cae64a5528720aad))
+
 ### [0.1.5](https://github.com/MemoSanMu/react-app/compare/v0.1.4...v0.1.5) (2021-09-13)
 
 
