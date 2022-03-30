@@ -11,7 +11,7 @@ function Frame(props: any) {
     <div className={cx('wraper-container')}>
       <div className={cx('header')}>
         <NavLink
-          to="/index"
+          to="/"
           className={({ isActive }) => (isActive ? cx('red') : '')}
         >
           瀑布流列表

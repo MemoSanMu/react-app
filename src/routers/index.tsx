@@ -1,5 +1,5 @@
 import { FC, lazy } from 'react';
-// import { Routes, Route, useRoutes } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 import { useRoutes, Navigate } from 'react-router-dom';
 
 const Frame = lazy(() => import('@/layouts/Frame')); // Frame
@@ -9,8 +9,11 @@ const Index = lazy(() => import('@/pages/IndexPage')); // 首页
 // const RootRouter: FC = () => (
 //   <Routes>
 //     <Route path="/" element={<Frame />}>
-//       <Route path="/" element={<Index />} />
-//       <Route path="home" element={<Home />} />
+//       <Route index element={<Index />} />
+//       <Route path="home" element={<Home />}>
+//         <Route index element={<div>home-1</div>} />
+//         <Route path=":id" element={<div>home-2</div>} />
+//       </Route>
 
 //       {/* “*”在这里有特殊的含义。只有当没有其他路线匹配时，它才会匹配。 */}
 //     </Route>
@@ -31,11 +34,7 @@ const RootRouter: FC = () =>
       element: <Frame />,
       children: [
         {
-          path: '/',
-          element: <Navigate to="index" />,
-        },
-        {
-          path: 'index',
+          index: true,
           element: <Index />,
         },
         {
@@ -50,7 +49,10 @@ const RootRouter: FC = () =>
         },
       ],
     },
-
+    // {
+    //   path: '/',
+    //   element: <Navigate to="index" />,
+    // },
     {
       path: '*',
       element: (
