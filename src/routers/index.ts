@@ -23,6 +23,7 @@ export const routers = [
     path: '/',
     key: '/',
     component: Frame,
+    redirect: '/index',
   },
   // ...handleRedirectNoMatching(), // 每级路由都需要添加404匹配地址
 ];

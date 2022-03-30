@@ -1,6 +1,5 @@
 import React from 'react';
-import RouterView from '@/routers/router-view';
-import { subPages } from '@/routers';
+import { Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './index.module.less';
@@ -11,10 +10,20 @@ function Frame(props: any) {
   return (
     <div className={cx('wraper-container')}>
       <div className={cx('header')}>
-        <NavLink to="/index">瀑布流列表</NavLink>
-        <NavLink to="/home">home</NavLink>
+        <NavLink
+          to="/index"
+          className={({ isActive }) => (isActive ? cx('red') : '')}
+        >
+          瀑布流列表
+        </NavLink>
+        <NavLink
+          to="/home"
+          className={({ isActive }) => (isActive ? cx('red') : '')}
+        >
+          home
+        </NavLink>
       </div>
-      <RouterView router={subPages} />
+      <Outlet />
     </div>
   );
 }
