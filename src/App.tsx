@@ -1,7 +1,7 @@
 import { FC, Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { basename } from '@/utils/config';
-import RootRouter from '@/pages';
+import RootRouter from '@/routers';
 
 import Loading from '@/publicComponents/base/Loading';
 
